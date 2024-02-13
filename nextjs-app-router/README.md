@@ -1,34 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Persona Attribution SDK example
 
-## Getting Started
+### Initalizing The SDK
+1. Since, the sdk attaches a `_persona` property to the `window` object , we would need to declare this property in the global namespace to the window object to avoid any errors from typescript. Please refer to `src/app/globals.types.d.ts` file
+2. To initialize the SDK , you can create a component with the `"use client"` directive which would initialize the SDK script. Please refere to `src/components/ScriptProvider.tsx`
+3. Then wrap the entire app within the `ScriptProvider` component, preferably in the root layout. Check this for reference - `src/app/layout.tsx` 
+**(Please note that by wrapping the entire app within ScriptProvider , we are still retaining the benfits of server components because the entire app is still rendered as `children`)**
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Tracking Custom Events
+Any sort of event such as button clicks, form submit etc. can be tracked using the following snippet - `window._persona.track(<Your_custom_event_name>, <Your_custom_properties>)`. 
+Check `src/app/page.tsx` and `src/components/ClickEventTracker.tsx` for an example
+#### Note: The event properties should be a valid json object with string values.
