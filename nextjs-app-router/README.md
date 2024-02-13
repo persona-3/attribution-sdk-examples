@@ -2,9 +2,9 @@
 
 ### Initalizing The SDK
 1. Since, the sdk attaches a `_persona` property to the `window` object , we would need to declare this property in the global namespace to the window object to avoid any errors from typescript. Please refer to `src/app/globals.types.d.ts` file
-2. To initialize the SDK , you can create a component with the `"use client"` directive which would initialize the SDK script. Please refere to `src/components/ScriptProvider.tsx`
+2. To initialize the SDK , you can create a component with the `"use client"` directive which would initialize the SDK script. Please refer to `src/components/ScriptProvider.tsx`
 3. Then wrap the entire app within the `ScriptProvider` component, preferably in the root layout. Check this for reference - `src/app/layout.tsx` 
-**(Please note that by wrapping the entire app within ScriptProvider , we are still retaining the benfits of server components because the entire app is still rendered as `children`)**
+**(Please note that by wrapping the entire app within ScriptProvider , we are still retaining the benefits of server components because the entire app is still rendered as `children`)**
 
 
 ### Tracking Custom Events
