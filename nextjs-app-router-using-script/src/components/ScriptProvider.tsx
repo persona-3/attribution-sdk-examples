@@ -9,9 +9,10 @@ export const ScriptProvider = ({ children }: { children: ReactNode }) => {
         src="https://cdn.jsdelivr.net/npm/@personaxyz/attribution-sdk@latest"
         crossOrigin="anonymous"
         onLoad={() => {
-          window._persona.Attribution.init({
-            apiKey: "<Your_API_Key_here>",
-          });
+          if (!window.persona) {
+            window._persona.Attribution.init({ apiKey: "<YOUR_API_KEY_HERE>" });
+            window.persona = window._persona.Attribution;
+          }
         }}
       ></Script>
       {children}

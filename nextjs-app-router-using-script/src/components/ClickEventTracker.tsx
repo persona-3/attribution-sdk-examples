@@ -3,7 +3,7 @@ import { ReactElement, cloneElement } from "react";
 
 interface ClickEventTrackerProps {
   eventName: string;
-  properties?: { [key: string]: string };
+  properties?: Record<string, string>;
   children?: ReactElement;
 }
 
@@ -14,7 +14,7 @@ export const ClickEventTracker = (props: ClickEventTrackerProps) => {
 
   return cloneElement(children, {
     onClick: () => {
-      window._persona.Attribution.track(eventName, properties);
+      window.persona.track(eventName, properties);
     },
   });
 };
