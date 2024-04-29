@@ -29,6 +29,10 @@ persona.track(<Event_ID>, <Your_custom_properties>);
 
 **Note**: The event properties are optional but if provided, should be a valid JSON object.
 
+# Testing Instructions
+
+You'll find testing instructions at the bottom of the documentation.
+
 ---
 
 # Integration via npm
@@ -65,7 +69,7 @@ Attribution.init({
 Once the sdk is initialized using the above snippet, you can track any custom event on user triggered actions such as button clicks, form submit etc. by using the following snippet.
 
 ```
-persona.track(<Event_ID>, <Your_custom_properties>);
+Attribution.track(<Event_ID>, <Your_custom_properties>);
 ```
 
 **Note**: The event properties are optional but if provided, should be a valid JSON object.
