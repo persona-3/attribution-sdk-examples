@@ -8,6 +8,6 @@
 
 
 ### Tracking Custom Events
-Any sort of event such as button clicks, form submit etc. can be tracked using the following snippet - `window.persona.track(<Your_custom_event_name>, <Your_custom_properties>)`. 
+Any sort of event such as button clicks, form submit etc. can be tracked using the following snippet - `window.persona.track(<Your_event_id>, <Your_custom_properties>)`. 
 Check `src/app/page.tsx` and `src/components/ClickEventTracker.tsx` for an example
 #### Note: The event properties should be a valid json object with string values.
