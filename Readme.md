@@ -12,7 +12,7 @@ This is the most simple way to integrate the sdk in your app. To load the attrib
 ### Tag Initialization
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/@personaxyz/attribution-sdk@0.0.2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@personaxyz/attribution-sdk@0.0.3" crossorigin="anonymous"></script>
 <script>window.persona || _persona.Attribution.init({ apiKey:'<YOUR_API_KEY_HERE>' }); window.persona = _persona.Attribution;</script>
 ```
 
@@ -44,7 +44,7 @@ If you prefer integrating through npm, you can follow the below steps for integr
 To install the sdk , run the following command
 
 ```
-npm install @personaxyz/attribution-sdk@0.0.2
+npm install @personaxyz/attribution-sdk@0.0.3
 ```
 
 ### Initialization

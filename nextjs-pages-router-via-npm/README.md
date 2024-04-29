@@ -6,7 +6,7 @@ To integrate the sdk via npm, you can follow the below steps.
 - Initialize the sdk once on page/app startup to enable auto tracking of user sessions.
 
 1. To install the sdk, simply run the following command
-`npm install @personaxyz/attribution-sdk@0.0.2`
+`npm install @personaxyz/attribution-sdk@0.0.3`
 
 2. Once the sdk is installed, you need to initialize the sdk once on app startup using the following snippet. Check `pages/_app.tsx` for reference
 ```
