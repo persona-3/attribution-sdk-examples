@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <h1>Welcome to Persona</h1>
         <button
           onClick={() => {
-            Attribution.track("button-click", { foo: "bar" });
+            Attribution.track("<YOUR_EVENT_ID>", { foo: "bar" });
           }}
         >
           Track Custom Event

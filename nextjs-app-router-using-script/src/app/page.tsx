@@ -35,7 +35,7 @@ export default function Home() {
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Docs <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">-&gt;</span>
           </h2>
-          <ClickEventTracker eventName="docs-click">
+          <ClickEventTracker eventId="ed30fefc-712e-4813-b9d2-3d460b516db5">
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Find in-depth information about Next.js features and API.</p>
           </ClickEventTracker>
         </a>
@@ -49,7 +49,7 @@ export default function Home() {
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Learn <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">-&gt;</span>
           </h2>
-          <ClickEventTracker eventName="learn-click">
+          <ClickEventTracker eventId="ed30fefc-711e-4813-kd8d-3d4609216db5">
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
           </ClickEventTracker>
         </a>
@@ -63,7 +63,7 @@ export default function Home() {
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Templates <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">-&gt;</span>
           </h2>
-          <ClickEventTracker eventName="template-click">
+          <ClickEventTracker eventId="ed30fefc-711e-4813-b9d2-bc23ea516db5">
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Explore the Next.js 13 playground.</p>
           </ClickEventTracker>
         </a>
@@ -77,7 +77,7 @@ export default function Home() {
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Deploy <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">-&gt;</span>
           </h2>
-          <ClickEventTracker eventName="deploy-click">
+          <ClickEventTracker eventId="ed30fefc-711e-4813-bas2-bc23ea516db5">
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
           </ClickEventTracker>
         </a>

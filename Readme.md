@@ -12,7 +12,7 @@ This is the most simple way to integrate the sdk in your app. To load the attrib
 ### Tag Initialization
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/@personaxyz/attribution-sdk@latest" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@personaxyz/attribution-sdk@0.0.2" crossorigin="anonymous"></script>
 <script>window.persona || _persona.Attribution.init({ apiKey:'<YOUR_API_KEY_HERE>' }); window.persona = _persona.Attribution;</script>
 ```
 
@@ -24,10 +24,10 @@ The above code snippet will download the tag followed by auto initialization of 
 Once the tag is initialized using the above snippet, you can track any custom event on user triggered actions such as button clicks, form submit etc. by using the following snippet.
 
 ```
-persona.track(<Your_custom_event_name>, <Your_custom_properties>);
+persona.track(<Event_ID>, <Your_custom_properties>);
 ```
 
-**Note**: The event properties are optional but if provided, should be a valid JSON object with string values.
+**Note**: The event properties are optional but if provided, should be a valid JSON object.
 
 ---
 
@@ -44,7 +44,7 @@ If you prefer integrating through npm, you can follow the below steps for integr
 To install the sdk , run the following command
 
 ```
-npm install @personaxyz/attribution-sdk@latest
+npm install @personaxyz/attribution-sdk@0.0.2
 ```
 
 ### Initialization
@@ -65,7 +65,17 @@ Attribution.init({
 Once the sdk is initialized using the above snippet, you can track any custom event on user triggered actions such as button clicks, form submit etc. by using the following snippet.
 
 ```
-Attribution.track(<Your_custom_event_name>, <Your_custom_properties>);
+persona.track(<Event_ID>, <Your_custom_properties>);
 ```
 
-**Note**: The event properties are optional but if provided, should be a valid JSON object with string values.
+**Note**: The event properties are optional but if provided, should be a valid JSON object.
+
+---
+
+# Testing Instructions
+
+Once you have setup all the custom track events, you can verify if your events are getting recorded appropriately.
+1. Since we attach a dynamic query parameter whenever a user lands on your site through a Persona ad, you need to replicate this scenario before you begin testing. 
+To replicate this scenario, simply append the following query parameter to your site url - `prsna_id=test` and reload the page
+E.g. - `http://localhost:3000?prsna_id=test`
+2. Once you append the query parameter and reload the page, you can start firing your custom events and if configured properly, your events should start reflecting on the [dashboard](https://ads.persona3.io/conversions) 
