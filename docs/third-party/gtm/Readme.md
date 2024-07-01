@@ -1,6 +1,6 @@
-#GTM (Google Tag Manager) Integration
+# GTM (Google Tag Manager) Integration
 
-##Create Base Pixel
+## Create Base Pixel
 
 **Note:** Only 1 base pixel is needed per website/web app.
 
@@ -14,7 +14,7 @@
 8. Click "Save".
 
 
-##Create Event Pixel
+## Create Event Pixel
 
 **Note:** Please ensure you have configured the base pixel before creating event pixel
 
