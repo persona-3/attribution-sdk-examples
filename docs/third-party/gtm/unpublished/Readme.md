@@ -34,9 +34,7 @@
 5. In the dialog/sheet that opens up, select "Persona Event Pixel" from the "Custom" section. 
 7. Give your tag a title. Otherwise, it will default to "Untitled Tag".
 8. An event id is needed to successfully setup the event tag, which can be generated on [Persona's ad platform](https://ads.persona3.io/conversions "Persona's ad platform"). Log in to the platform and click "Conversions" from the left-hand navigation menu > click on "Add new event" under appropriate event source > Choose appropriate event type and enter event name > click on "Save & Continue".
-
 <img width="699" alt="Screenshot 2024-07-01 at 11 41 09 AM" src="https://github.com/persona-3/attribution-sdk-examples/assets/132479297/6699f5f2-457a-42b0-a12f-e4d34afeb8d7">
-
 9. Copy and paste the "event id" into the Persona Event tag template.
 10. Optionally you can add any additional event parameters such as user email, purchase amount etc.
 11. Add the necessary triggers to have the tag event load on a specific set of actions.
