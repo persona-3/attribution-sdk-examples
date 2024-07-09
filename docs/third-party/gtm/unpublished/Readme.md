@@ -16,9 +16,7 @@
 
 9. Copy and paste the "api key" into the Persona Base tag template.
 10. Choose trigger named "Initialization - All Pages" with type "Initialization".
-
 <img width="1680" alt="Screenshot 2024-07-01 at 11 37 31 AM" src="https://github.com/persona-3/attribution-sdk-examples/assets/132479297/666af1ae-c74d-431d-9b1e-ac84d85864c7">
-
 11. Click "Save".
 
 
