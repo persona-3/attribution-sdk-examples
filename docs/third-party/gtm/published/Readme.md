@@ -13,7 +13,9 @@
 
 6. Copy and paste the "api key" into the Persona Base tag template.
 7. Choose trigger named "Initialization - All Pages" with type "Initialization".
+
 <img width="1680" alt="Screenshot 2024-07-01 at 11 37 31 AM" src="https://github.com/persona-3/attribution-sdk-examples/assets/132479297/666af1ae-c74d-431d-9b1e-ac84d85864c7">
+
 8. Click "Save".
 
 
@@ -25,7 +27,8 @@
 2. In the dialog/sheet that opens up, select "Discover more tag tag types in the community template gallery" and search for "Persona Event Pixel".
 3. Select "Persona Event Pixel" and click on "Add to workspace".
 4. Give your tag a title. Otherwise, it will default to "Untitled Tag".
-5. An event id is needed to successfully setup the base tag, which can be generated on [Persona's ad platform](https://ads.persona3.io/conversions "Persona's ad platform"). Log in to the platform and click "Conversions" from the left-hand navigation menu > click on "Add new event" under appropriate event source > Choose appropriate event type and enter event name > click on "Save & Continue".
+5. An event id is needed to successfully setup the event tag, which can be generated on [Persona's ad platform](https://ads.persona3.io/conversions "Persona's ad platform"). Log in to the platform and click "Conversions" from the left-hand navigation menu > click on "Add new event" under appropriate event source > Choose appropriate event type and enter event name > click on "Save & Continue".
+
 <img width="699" alt="Screenshot 2024-07-01 at 11 41 09 AM" src="https://github.com/persona-3/attribution-sdk-examples/assets/132479297/6699f5f2-457a-42b0-a12f-e4d34afeb8d7">
 
 6. Copy and paste the "event id" into the Persona Event tag template.
