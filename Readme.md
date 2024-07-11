@@ -12,8 +12,16 @@ This is the most simple way to integrate the sdk in your app. To load the attrib
 ### Tag Initialization
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/@personaxyz/attribution-sdk@0.0.3" crossorigin="anonymous"></script>
-<script>window.persona || _persona.Attribution.init({ apiKey:'<YOUR_API_KEY_HERE>' }); window.persona = _persona.Attribution;</script>
+<script>
+(function(p,r,s,n,a){
+    p._peq=p._peq||{};_peq.queue=[];_peq.track=function(e,t){p[n]?p[n][a].track(e,t):p._peq.queue.push({eventId:e,properties:t})};
+    var c=r.createElement(s);c.src='https://cdn.jsdelivr.net/npm/@personaxyz/attribution-sdk@0.0.4';c.async=!0;
+    c.onload=function(){p[n][a].init({
+        apiKey: '<YOUR_API_KEY_HERE>'
+    })};
+    r.head.appendChild(c);
+})(window,document,'script','_persona','Attribution');
+</script>
 ```
 
 The above code snippet will download the tag followed by auto initialization of user session tracking on the page.
@@ -24,7 +32,7 @@ The above code snippet will download the tag followed by auto initialization of 
 Once the tag is initialized using the above snippet, you can track any custom event on user triggered actions such as button clicks, form submit etc. by using the following snippet.
 
 ```
-persona.track(<Event_ID>, <Your_custom_properties>);
+window._peq?.track(<Event_ID>, <Your_custom_properties_in_JSON>);
 ```
 
 **Note**: The event properties are optional but if provided, should be a valid JSON object.
@@ -48,7 +56,7 @@ If you prefer integrating through npm, you can follow the below steps for integr
 To install the sdk , run the following command
 
 ```
-npm install @personaxyz/attribution-sdk@0.0.3
+npm install @personaxyz/attribution-sdk@0.0.4
 ```
 
 ### Initialization
