@@ -12,8 +12,16 @@ This is the most simple way to integrate the sdk in your app. To load the attrib
 ### Tag Initialization
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/@personaxyz/attribution-sdk@0.0.3" crossorigin="anonymous"></script>
-<script>window.persona || _persona.Attribution.init({ apiKey:'<YOUR_API_KEY_HERE>' }); window.persona = _persona.Attribution;</script>
+<script>
+(function(p,r,s,n,a){
+    p._peq=p._peq||{};_peq.queue=[];_peq.track=function(e,t){p[n]?p[n][a].track(e,t):p._peq.queue.push({eventId:e,properties:t})};
+    var c=r.createElement(s);c.src='https://cdn.jsdelivr.net/npm/@personaxyz/attribution-sdk@0.0.5';c.async=!0;
+    c.onload=function(){p[n][a].init({
+        apiKey: '<YOUR_API_KEY_HERE>'
+    })};
+    r.head.appendChild(c);
+})(window,document,'script','_persona','Attribution');
+</script>
 ```
 
 The above code snippet will download the tag followed by auto initialization of user session tracking on the page.
@@ -24,16 +32,10 @@ The above code snippet will download the tag followed by auto initialization of 
 Once the tag is initialized using the above snippet, you can track any custom event on user triggered actions such as button clicks, form submit etc. by using the following snippet.
 
 ```
-persona.track(<Event_ID>, <Your_custom_properties>);
+window._peq?.track(<Event_ID>, <Your_custom_properties_in_JSON>);
 ```
 
 **Note**: The event properties are optional but if provided, should be a valid JSON object.
-
-# Testing Instructions
-
-You'll find testing instructions at the bottom of the documentation.
-
----
 
 # Integration via npm
 
@@ -48,7 +50,7 @@ If you prefer integrating through npm, you can follow the below steps for integr
 To install the sdk , run the following command
 
 ```
-npm install @personaxyz/attribution-sdk@0.0.3
+npm install @personaxyz/attribution-sdk@0.0.5
 ```
 
 ### Initialization
@@ -58,7 +60,7 @@ To start tracking user sessions on the page, simply initialize this **once** in 
 ```
 import { Attribution } from '@personaxyz/attribution-sdk';
 Attribution.init({
-            apiKey: "<Your_API_Key_here>"
+    apiKey: "<Your_API_Key_here>"
  });
 ```
 
@@ -73,13 +75,3 @@ Attribution.track(<Event_ID>, <Your_custom_properties>);
 ```
 
 **Note**: The event properties are optional but if provided, should be a valid JSON object.
-
----
-
-# Testing Instructions
-
-Once you have setup all the custom track events, you can verify if your events are getting recorded appropriately.
-1. Since we attach a dynamic query parameter whenever a user lands on your site through a Persona ad, you need to replicate this scenario before you begin testing. 
-To replicate this scenario, simply append the following query parameter to your site url - `prsna_id=test` and reload the page
-E.g. - `http://localhost:3000?prsna_id=test`
-2. Once you append the query parameter and reload the page, you can start firing your custom events and if configured properly, your events should start reflecting on the [dashboard](https://ads.persona3.io/conversions) 
