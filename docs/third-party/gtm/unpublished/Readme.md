@@ -39,7 +39,7 @@
 9. You can find the event ID on the next page: <div style="display: flex; justify-content:center; items:center; padding:16px;">
       <img style="border: 1px solid black; border-radius: 8px;" src="https://github.com/user-attachments/assets/c42ae357-afca-42ed-a4e3-680681f1b81f" alt="Creating a new event source" width="800" height="350"/>
     </div>
-10. If you have already created an event, you can find the event ID by using the *Event Details* option <div style="display: flex; justify-content:center; items:center; padding:16px;"><img style="border: 1px solid black; border-radius: 8px;"  width="100%" alt="Screenshot 2024-09-09 at 7 11 52 PM" src="https://github.com/user-attachments/assets/181dce35-c447-4107-8223-20a83d6e911e"/></div> 
+10. If you have already created an event, you can find the event ID by using the *Event Details* option <div style="display: flex; justify-content:center; items:center; padding:16px;"><img width="100%" alt="Screenshot 2024-09-09 at 7 11 52 PM" src="https://github.com/user-attachments/assets/181dce35-c447-4107-8223-20a83d6e911e"/></div>
 11. Copy and paste the "event ID" into the Persona Event tag template.
 12. Optionally, you can add any additional event parameters such as user email, purchase amount, etc.
 13. Add the necessary triggers to have the tag event load on a specific set of actions.
