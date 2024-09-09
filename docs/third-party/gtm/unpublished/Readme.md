@@ -12,7 +12,7 @@
 6. In the dialog/sheet that opens up, select "Persona Base Pixel" from the "Custom" section.
 7. Give your tag a title. Otherwise, it will default to "Untitled Tag".
 8. An API key is needed to successfully set up the base tag, which can be generated on [Persona's ad platform](https://ads.persona3.io/conversions "Persona's ad platform"). Log in to the platform and click "Conversions" from the left-hand navigation menu: <div style="display: flex; justify-content:center; items:center; padding:16px;"><img style="border: 1px solid black; border-radius: 8px;" src="https://github.com/user-attachments/assets/dfa286ae-64dc-4237-80b3-5cddbe991202" alt="Conversions Tab" width="800" height="350"/></div>
-9. Click on Create Conversion Actions > Fill the Form to add a new source > Create an Event. After you create an event, you can find the API key here:    
+9. Click on Create Conversion Actions > Fill the Form to add a new source, Then you can create a new Event for this source. After you create an event, you can find the API key on the next page:    
     <div style="display: flex; justify-content:center; items:center; padding:16px;">
       <img style="border: 1px solid black; border-radius: 8px;" src="https://github.com/user-attachments/assets/c42ae357-afca-42ed-a4e3-680681f1b81f" alt="Creating a new event source" width="800" height="350"/>
     </div>
