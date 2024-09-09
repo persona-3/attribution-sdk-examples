@@ -11,9 +11,9 @@
 5. In the Google Tag Manager workspace, select "Tags" from the left-hand navigation menu and click "New", then click on "Tag Configuration".
 6. In the dialog/sheet that opens up, select "Persona Base Pixel" from the "Custom" section.
 7. Give your tag a title. Otherwise, it will default to "Untitled Tag".
-8. An API key is needed to successfully set up the base tag, which can be generated on [Persona's ad platform](https://ads.persona3.io/conversions "Persona's ad platform"). Log in to the platform and click "Conversions" from the left-hand navigation menu > click on Add new event source > Enter your website name and URL > click on "Save & Continue".  
+8. An API key is needed to successfully set up the base tag, which can be generated on [Persona's ad platform](https://ads.persona3.io/conversions "Persona's ad platform"). Log in to the platform and click "Conversions" from the left-hand navigation menu > click on Create Conversion Actions > Create an Event Source > Create an Event. After you create an event, you can find the API key here:    
     <div style="display: flex; justify-content:center; align-content:center;">
-      <img src="https://github.com/persona-3/attribution-sdk-examples/assets/132479297/7fb2b054-d321-4e46-b477-fb62ef1d5894" alt="Creating a new event source" width="600" height="350"/>
+      <img src="https://github.com/user-attachments/assets/c42ae357-afca-42ed-a4e3-680681f1b81f" alt="Creating a new event source" width="600" height="350"/>
     </div>
 9. Copy and paste the "API key" into the Persona Base tag template.
 10. Choose the trigger named "Initialization - All Pages" with type "Initialization".
