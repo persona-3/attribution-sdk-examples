@@ -16,7 +16,7 @@
       <img style="border: 1px solid black; border-radius: 8px;" src="https://github.com/user-attachments/assets/c42ae357-afca-42ed-a4e3-680681f1b81f" alt="Creating a new event source" width="800" height="350"/>
     </div>
 9. You can find API key for an existing event source by clicking "Conversions" from the left-hand navigation menu:
-  <div style="display: flex; justify-content:center; items:center; padding:16px;"><img width="100%" alt="Screenshot 2024-09-09 at 7 11 52 PM" src="https://github.com/user-attachments/assets/24d0ad8f-30c8-4a63-9d01-604f96e106e8"> </div>
+  <div style="display: flex; justify-content:center; items:center; padding:16px;"><img width="100%" alt="Screenshot 2024-09-09 at 7 11 52 PM" src="https://github.com/user-attachments/assets/24d0ad8f-30c8-4a63-9d01-604f96e106e8" /> </div>
 10. Copy and paste the "API key" into the Persona Base tag template.
 11. Choose the trigger named "Initialization - All Pages" with type "Initialization".
     ![Choosing a trigger](https://github.com/persona-3/attribution-sdk-examples/assets/132479297/666af1ae-c74d-431d-9b1e-ac84d85864c7)
@@ -34,8 +34,7 @@
 5. In the Google Tag Manager workspace, select "Tags" from the left-hand navigation menu and click "New", then click on "Tag Configuration".
 6. In the dialog/sheet that opens up, select "Persona Event Pixel" from the "Custom" section.
 7. Give your tag a title. Otherwise, it will default to "Untitled Tag".
-8. An event ID is needed to successfully setup the event tag, which can be generated on [Persona's ad platform](https://ads.persona3.io/conversions "Persona's ad platform"). Log in to the platform and click "Conversions" from the left-hand navigation menu > click on "Add new event" under appropriate event source > Choose appropriate event type and enter event name > click on "Save & Continue".
-    ![Adding new Event](https://github.com/persona-3/attribution-sdk-examples/assets/132479297/6699f5f2-457a-42b0-a12f-e4d34afeb8d7)
+8. An event ID is needed to successfully setup the event tag, which can be generated on [Persona's ad platform](https://ads.persona3.io/conversions "Persona's ad platform"). Log in to the platform and click "Conversions" from the left-hand navigation menu > click on "Add event" under appropriate event source > Choose appropriate event type and enter event name > click on "Save & Continue". <div style="display: flex; justify-content:center; items:center; padding:16px;"><img width="100%" alt="Screenshot 2024-09-09 at 7 11 52 PM" src="https://github.com/user-attachments/assets/64fa16c5-9831-411a-932e-82f907d05cc9"/> </div>
 9. Copy and paste the "event ID" into the Persona Event tag template.
 10. Optionally, you can add any additional event parameters such as user email, purchase amount, etc.
 11. Add the necessary triggers to have the tag event load on a specific set of actions.
