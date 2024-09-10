@@ -17,10 +17,9 @@
       <img style="border-radius: 8px;" src="https://github.com/user-attachments/assets/c42ae357-afca-42ed-a4e3-680681f1b81f" alt="Creating a new event source" width="800" height="350"/>
     </div>
 10. You can also find the API key for an existing event source by clicking "Conversions" from the left-hand navigation menu and scrolling to the appropriate event source:
-  <div style="display: flex; justify-content:center; items:center; padding:16px;"><img width="100%" alt="Screenshot 2024-09-09 at 7 11 52 PM" src="https://github.com/user-attachments/assets/24d0ad8f-30c8-4a63-9d01-604f96e106e8" /> </div>
+  <div style="display: flex; justify-content:center; items:center; padding:16px;"><img width="800" alt="api-key-loc" src="https://github.com/user-attachments/assets/24d0ad8f-30c8-4a63-9d01-604f96e106e8" /> </div>
 10. Copy and paste the "API key" into the Persona Base tag template.
-11. Choose the trigger named "Initialization - All Pages" with type "Initialization".
-    ![Choosing a trigger](https://github.com/persona-3/attribution-sdk-examples/assets/132479297/666af1ae-c74d-431d-9b1e-ac84d85864c7)
+11. Choose the trigger named "Initialization - All Pages" with type "Initialization".<div style="display: flex; justify-content:center; items:center; padding:16px;"><img width="800" alt="Choosing a trigger" src="https://github.com/persona-3/attribution-sdk-examples/assets/132479297/666af1ae-c74d-431d-9b1e-ac84d85864c7" /> </div>
 12. Click "Save".
 
 
